@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Who from "./components/Who";
 import Works from "./components/Works";
 
+import background from "./assets/img/bg.jpeg";
 const Container = styled.div`
   height: 100vh;
   scroll-snap-type: y mandatory;
@@ -11,7 +12,7 @@ const Container = styled.div`
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
-  background: url("./img/bg.jpeg");
+  background: ${`url(${background})`};
   &::-webkit-scrollbar {
     display: none;
   }

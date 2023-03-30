@@ -1,7 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Cube from "./Cube";
-
+import line from "../assets/img/line.png";
 import styled from "styled-components";
 
 const Section = styled.div`
@@ -90,7 +90,7 @@ export default function Who() {
         <Right>
           <Title>Think outside the square space</Title>
           <WhatWeDo>
-            <Line src="../public/img/line.png" />
+            <Line src={line} />
             <Subtitle>Who we are</Subtitle>
           </WhatWeDo>
           <Desc>

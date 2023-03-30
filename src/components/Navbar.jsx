@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
+import logo from "../assets/img/logo.png";
+import search from "../assets/img/search.png";
 const Section = styled.div`
   display: flex;
   justify-content: center;
@@ -70,7 +71,7 @@ function Navbar() {
     <Section>
       <Container>
         <Links>
-          <Logo src="../public/img/logo.png" />
+          <Logo src={logo} />
           <List>
             <ListItem>Home</ListItem>
             <ListItem>Studio</ListItem>
@@ -79,7 +80,7 @@ function Navbar() {
           </List>
         </Links>
         <Icons>
-          <Icon src="../public/img/search.png"></Icon>
+          <Icon src={search}></Icon>
           <Button>Hire Now</Button>
         </Icons>
       </Container>

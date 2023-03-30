@@ -3,6 +3,8 @@ import Navbar from "./Navbar";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React from "react";
+import linepng from "../assets/img/line.png";
+import hero from "../assets/img/moon.png";
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -121,7 +123,7 @@ export default function Hero() {
         <Left>
           <Title>Think. Make. Solve.</Title>
           <WhatWeDo>
-            <Line src="../public/img/line.png" />
+            <Line src={linepng} />
             <Subtitle>What we do</Subtitle>
           </WhatWeDo>
           <Desc>we enjoy delightful, human-created digit experiences.</Desc>
@@ -141,7 +143,7 @@ export default function Hero() {
               />
             </Sphere>
           </Canvas>
-          <Img src="../public/img/moon.png" />
+          <Img src={hero} />
         </Right>
       </Container>
     </Section>
