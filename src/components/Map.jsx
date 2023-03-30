@@ -6,7 +6,6 @@ import {
   Annotation,
   ZoomableGroup,
 } from "react-simple-maps";
-
 const Map = () => {
   return (
     <ComposableMap
